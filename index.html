@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+  <head>
+    <link rel="stylesheet" href="/css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Índice de Massa Corporal</title>
+    <link rel="shortcut icon" href="/img/icone.png" />
+    <!-- Css Bootstrap 
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />-->
+  </head>
+  <body id="fundo" background="./img/fundo.jpg">
+    <div class="container">
+    <header class="header">
+      <div class="headerBtnGroup">
+        <a href="/paginas/calculo.html"
+          ><button class="navBtn">Entenda o cálculo</button></a
+        >
+        <a href="/paginas/dicasdesaude.html"
+          ><button class="navBtn">Dicas de Saúde</button></a
+        >
+      </div>
+    </header>
+    <div class="container2">
+      <p class="sectionTitle" id="BackToTop">Calculadora de IMC</p>
+      <!--É o ID que vai ligar a âncora do fim da página-->
+      <p class="sectionDescription">Índice de Massa Corporal</p>
+      <div class="formulario">
+        <form class="formulario2">
+          <p class="sectionTitle">Qual o seu peso?</p>
+          <br />
+          <input
+            id="peso"
+            type="number"
+            class="calculadora"
+            value=""
+            maxlength="3"
+            minlength="2"
+          />
+          <p class="letras">Kg</p>
+          <br />
+          <p class="sectionTitle">Qual a sua altura?</p>
+          <br />
+          <input
+            id="altura"
+            type="number"
+            class="calculadora"
+            value=""
+            maxlength="4"
+            minlength="3"
+          />
+          <p class="letras">em centímetros</p>
+          <br />
+          <br />
+          <button
+            id="calcular"
+            type="button"
+            class="btn-btn"
+            onclick="enviar()"
+          >
+            Calcular
+          </button>
+          <button id="limpar" type="reset" class="btn-btn">Limpar</button>
+          <br />
+          <div class="resultado">
+            <br />
+            <p id="aparecer">Seu cálculo aqui</p>
+            <br />
+          </div>
+        </form>
+      </div>
+    </div>
+      <footer class="header">
+        <a href="#BackToTop" class="footerAnchor"> Voltar ao topo</a>
+
+        <!--É o # que vai ligar ao início da página-->
+      </footer>
+  
+    <script src="./index.js"></script>
+    <!-- Script Bootstrap (última coisa)
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"
+      >
+    </script>
+    -->
+  </body>
+</html>
